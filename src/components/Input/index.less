@@ -1,0 +1,31 @@
+/**
+* @author: houzhitao
+* @since: 2018-06-15 15:48
+*/
+.input-form {
+  position: relative;
+  width:100%;
+  height: 34px;
+  &-common {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    height: 34px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 14px
+  }
+  &-common:focus {
+    outline: 0;
+  }
+  .input-form-error {
+    position: absolute;
+    left: 102%;
+    top: 0;
+    height: 34px;
+    line-height: 34px;
+    white-space: nowrap;
+    color: red;
+  }
+}

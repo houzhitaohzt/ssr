@@ -1,0 +1,104 @@
+/**
+* @author: houzhitao
+* @since: 2018-06-05 16:22
+*/
+
+.lt-h {
+  width:100%;
+  height: 78px;
+  border-bottom: 2px solid #3b8cff;
+}
+
+.lt-c {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  zoom: 1;
+}
+
+//左右两边的公共样式
+.lt-c-common {
+  display: inline-block;
+  height: 78px;
+  line-height: 78px;
+}
+
+.lt-c-l {
+  composes: lt-c-common;
+  float: left;
+}
+
+.lt-c-r {
+  composes: lt-c-common;
+  float: right;
+}
+
+//浮动
+.ft {
+  float: left;
+}
+//右浮动
+.ftr {
+  float: right;
+}
+
+.a {
+  composes: ft;
+  padding-right: 20px;
+}
+
+.img {
+  vertical-align: middle;
+}
+
+.title {
+  composes: ft;
+  color: #3b8cff;
+  font-family: 'PingFang-SC-Bold';
+  font-size: 20px;
+  padding-right: 80px;
+  font-weight: bold;
+}
+
+.ul {
+  composes: ft;
+  color: #3b8cff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.li {
+  composes: ft;
+  width: 100px;
+  text-align: center;
+
+}
+.li-active {
+  composes: ft;
+  composes: li;
+  color: #fff;
+  background-color: #3b8cff;
+}
+
+//右边登录和申请入驻按钮
+.bt {
+  background-color: #fff;
+  border:1px solid #3b8cff;
+  color: #3b8cff;
+  border-radius: 2px;
+  padding:6px 18px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 16px;
+}
+.login {
+  composes: bt;
+}
+.apply {
+  composes: bt;
+}
+.login:hover,
+.apply:hover {
+  background-color: #e3ecf7;
+}

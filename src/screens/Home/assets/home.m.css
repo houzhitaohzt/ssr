@@ -1,0 +1,25 @@
+/**
+* @author: houzhitao
+* @since: 2018-05-30 20:51
+*/
+
+:global(.bgRed) {
+    background-color: #f00;
+}
+
+.buttonone {
+    /*composes: button from 'library/button.css';*/
+    width: 100px;
+    height: 36px;
+    color: pink;
+    background-color: lightseagreen;
+    outline:none;
+}
+
+.buttontwo {
+    width: 100px;
+    height: 36px;
+    color: black;
+    background-color: red;
+    outline:none;
+}

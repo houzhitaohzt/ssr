@@ -1,0 +1,94 @@
+/**
+* @author: houzhitao
+* @since: 2018-06-11 16:22
+*/
+/*第二种动画*/
+@keyframes showup {
+  from {
+    top: 40%;
+    opacity: 0.6;
+  }
+  to {
+    top: 48%;
+    opacity: 1;
+  }
+}
+@-moz-keyframes showup /* Firefox */
+{
+  from {
+    top: 40%;
+    opacity: 0.6;
+  }
+  to {
+    top: 48%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showup /* Safari 和 Chrome */
+{
+  from {
+    top: 40%;
+    opacity: 0.6;
+  }
+  to {
+    top: 48%;
+    opacity: 1;
+  }
+}
+@-o-keyframes showup /* Opera */
+{
+  from {
+    top: 40%;
+    opacity: 0.6;
+  }
+  to {
+    top: 48%;
+    opacity: 1;
+  }
+}
+
+/*第二种提示*/
+.show-tip {
+  max-width: 1100px;
+  position: fixed;
+  left: 50%;
+  top: 48%;
+  opacity: 1;
+  z-index: 9999999;
+  border-radius: 5px;
+  padding: 10px 12px;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: showup .2s;
+  -moz-animation: showup .2s;	/* Firefox */
+  -webkit-animation: showup .2s;	/* Safari 和 Chrome */
+  -o-animation: showup .2s;	/* Opera */
+}
+.show-tip.success {
+  border: 1px solid #b7eb8f;
+  background-color: #f6ffed;
+}
+.show-tip.error {
+  border: 1px solid #ffa39e;
+  background-color: #fff1f0;
+}
+.show-tip.warning {
+  border: 1px solid #ffe58f;
+  background-color: #fffbe6;
+}
+.show-tip.info {
+  border: 1px solid #91d5ff;
+  background-color: #e6f7ff;
+}
+.show-tip-img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: sub;
+}
+.show-tip-c {
+  font-family: "Microsoft YaHei";
+  color: #666;
+  font-size: 14px;
+}

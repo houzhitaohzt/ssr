@@ -1,0 +1,131 @@
+/**
+* @author: houzhitao
+* @since: 2018-06-19 15:56
+*/
+
+.c {
+  padding: 0 20px;
+  background-color: #eff4f8;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.span {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+//total
+.all {
+  width: 100%;
+}
+//头部
+.head {
+  composes: c;
+  composes: flex;
+  height: 70px;
+}
+.head-r {
+  composes: flex;
+  color: #414D67;
+}
+.r-img {
+  composes: span;
+  width: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.r-address {
+  composes: span;
+}
+.rn {
+  display: block;
+}
+.ra {
+  display: block;
+  color: #a1aabc;
+}
+.r-out {
+  composes: span;
+  color: #414D67;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.r-i {
+  color: #414D67;
+  font-size: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.r-home {
+  composes: span;
+  cursor: pointer;
+  color: #666;
+}
+.r-phone {
+  composes: span;
+  margin-right: 0;
+}
+//内容
+.cont {
+  position: relative;
+  background-color: #eff4f8;
+  padding-bottom: 100px;
+}
+.c-l {
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 205px;
+  background-color: #eff4f8;
+  margin-top: 15px;
+}
+.c-r {
+  composes: c-l;
+  width: 30px;
+  right: 0;
+  left: inherit
+}
+.c-m {
+  padding-left: 205px;
+  padding-right: 20px;
+}
+.child {
+  border: 1px solid #d8dfea;
+  background-color: #fff;
+  min-height: 1200px;
+  padding: 20px;
+}
+
+// 左边 样式
+.dl {
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.dt {
+  padding-left: 20px;
+  height: 28px;
+}
+.dli {
+  font-size: 20px;
+  color: #999;
+  margin-right: 10px;
+}
+.dd {
+  padding-left: 70px;
+  height: 45px;
+  line-height: 45px;
+  cursor: pointer;
+}
+.active {
+  background-color: #e4e9ec;
+  color: #3b8cff;
+}
+.dd:hover {
+  background-color: #e4e9ec;
+  color: #3b8cff;
+}
