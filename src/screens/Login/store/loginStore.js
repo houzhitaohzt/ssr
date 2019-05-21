@@ -6,7 +6,6 @@
 import React, {Component} from 'react';
 import {observable, action, computed} from 'mobx';
 import Api from 'Api';
-// import WebData from '../../../util/common/WebData';
 
 export default class loginStore {
     form: Object = null;
@@ -20,15 +19,15 @@ export default class loginStore {
     dialogForm: Object = null;
     //user 选择下拉框列表
     userList: Array<Object> = [
-        {id: 'http://dev-user-api.wanshifu.com/', name: 'dev-user'},
-        {id: 'http://test-user-api.wanshifu.com/', name: 'test-user'},
-        {id: 'http://user-api.wanshifu.com/', name: 'product-user'}
+        {id: 'http://dev-user-api.noohle.com/', name: 'dev-user'},
+        {id: 'http://test-user-api.noohle.com/', name: 'test-user'},
+        {id: 'http://user-api.noohle.com/', name: 'product-user'}
     ];
     //city 选择下拉框列表
     cityList: Array<Object> = [
-        {id: 'http://dev-city-api.wanshifu.com/', name: 'dev-city'},
-        {id: 'http://test-city-api.wanshifu.com/', name: 'test-city'},
-        {id: 'http://user-city.wanshifu.com/', name: 'product-city'}
+        {id: 'http://dev-city-api.noohle.com/', name: 'dev-city'},
+        {id: 'http://test-city-api.noohle.com/', name: 'test-city'},
+        {id: 'http://user-city.noohle.com/', name: 'product-city'}
     ];
 
     initDialog(form){
@@ -101,10 +100,7 @@ export default class loginStore {
             if(error){
 
             }else{
-                // WebData.wshifuUserApi = value.user;
-                // WebData.wshifuCityApi = value.city;
                 this.getShowConfirm();
-                // window.location.reload();
             }
         })
     };
